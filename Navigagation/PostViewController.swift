@@ -7,12 +7,12 @@
 
 import UIKit
 
-class PostViewController: UIViewController {
+class PostViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .white
-
+        title = post.title
     }
 }
