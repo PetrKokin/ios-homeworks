@@ -12,7 +12,8 @@ class PostViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .white
+        view.backgroundColor = .yellow
         title = post.title
+
     }
 }

@@ -7,6 +7,10 @@
 
 import UIKit
 
+struct Post {
+var title: String
+}
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?

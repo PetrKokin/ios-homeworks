@@ -42,7 +42,13 @@ class FeedViewController: ViewController {
 
     @objc func feedButtonPressed(_ sender: UIButton){
 
-        dismiss(animated: true)
+        let postViewController = PostViewController()
+
+        postViewController.modalTransitionStyle = .flipHorizontal
+        postViewController.modalPresentationStyle = .pageSheet
+
+        present(postViewController, animated: true)
+
     }
 }
 
