@@ -7,9 +7,9 @@
 
 import UIKit
 
-class FeedViewController: UIViewController {
-    
 let post = Post(title: "Заголовок")
+
+class FeedViewController: ViewController {
 
     private lazy var backButton: UIButton = {
         let button = UIButton()
@@ -25,7 +25,7 @@ let post = Post(title: "Заголовок")
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "ПРОФИЛЬ"
+        title = "Моя лента"
         view.backgroundColor = .systemYellow
 
         view.addSubview(backButton)
@@ -42,7 +42,13 @@ let post = Post(title: "Заголовок")
 
     @objc func feedButtonPressed(_ sender: UIButton){
 
-        dismiss(animated: true)
+        let postViewController = PostViewController()
+
+        postViewController.modalTransitionStyle = .flipHorizontal
+        postViewController.modalPresentationStyle = .pageSheet
+
+        present(postViewController, animated: true)
+
     }
 }
 

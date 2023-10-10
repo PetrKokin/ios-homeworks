@@ -21,10 +21,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let window = UIWindow(windowScene: scene)
 
-        let feedViewController = ViewController()
+        let feedViewController = FeedViewController()
         feedViewController.view.backgroundColor = .systemGray4
 
-        let profileViewController = ViewController()
+        let profileViewController = ProfileViewController()
         profileViewController.view.backgroundColor = .systemGray4
 
         let tabBarController = UITabBarController()
